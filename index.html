@@ -7,28 +7,48 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <table>
-      <tbody>
-        <tr>
-          <td><label for="">Input Number</label></td>
-          <td><input type="number" name="" id="inputFiledOne" /></td>
-        </tr>
-        <tr>
-          <td><label for="">Input Number</label></td>
-          <td><input type="number" name="" id="inputFiledTwo" /></td>
-        </tr>
-        <tr>
-          <td><button type="button" id="addition">Addition</button></td>
-          <td><button type="button">Subtraction</button></td>
-        </tr>
-        <tr>
-          <td><button type="button">Multiplication</button></td>
-          <td><button type="button">Division</button></td>
-        </tr>
-      </tbody>
-    </table>
-    <hr />
-
+    <div id="calculator">
+      <h2>Basic Calculator</h2>
+      <table>
+        <tbody>
+          <!-- Input Div -->
+          <div id="inputDiv">
+             <div id="box1">
+              <tr>
+                <td><label for="">Input Number</label></td>
+                <td><input type="number" name="" id="inputFiledOne" /></td>
+              </tr>
+             </div>
+             <div id="box2">
+              <tr>
+                <td><label for="">Input Number</label></td>
+                <td><input type="number" name="" id="inputFiledTwo" /></td>
+              </tr>
+             </div>
+          </div>
+          <!-- Button Div -->
+          <div id="btnDiv">
+            <div id="box3">
+              <tr>
+                <td><button type="button" id="addition">Addition</button></td>
+                <td>
+                  <button type="button" id="subtraction">Subtraction</button>
+                </td>
+              </tr>
+            </div>
+            <div id="box4">
+              <tr>
+                <td>
+                  <button type="button" id="multiplication">
+                    Multiplication
+                  </button>
+                </td>
+                <td><button type="button" id="division">Division</button></td>
+              </tr>
+            </div>
+          </div>
+        </tbody>
+      </table>
     <script src="script.js"></script>
   </body>
 </html>
